@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".weJoinActivity">
+
+    <ImageView
+        android:id="@+id/text_V"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/text_name"
+        />
+
+    <EditText
+        android:id="@+id/userIdEt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_V"
+        android:textSize="25sp"
+        android:maxLines="1"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:hint="사용자 아이디"
+        />
+    <EditText
+        android:id="@+id/passEt1"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:hint="암호"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/userIdEt"/>
+
+    <EditText
+        android:id="@+id/passEt2"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:hint="암호 확인"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/passEt1"/>
+
+    <Button
+        android:id="@+id/chkBt"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="중복 확인"
+        android:layout_alignLeft="@+id/passEt2"
+        android:layout_marginTop="400dp"
+        />
+    <Button
+        android:id="@+id/joinBt"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="회원 가입"
+        android:layout_alignRight="@+id/passEt2"
+        android:layout_marginTop="400dp"
+        />
+
+
+
+
+
+
+</RelativeLayout>

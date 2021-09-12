@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="100dp"
+    android:paddingBottom="5dp">
+
+
+    <ImageView
+        android:id="@+id/profile_1"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:src="@drawable/profile_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/ch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:text="모임이름"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/profile_1"/>
+
+    <TextView
+        android:id="@+id/op_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ch_name"
+        android:layout_alignLeft="@+id/ch_name"
+        android:layout_marginTop="5dp"
+        android:text="개설자 이름"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/hash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/op_username"
+        android:layout_alignLeft="@+id/op_username"
+        android:layout_marginTop="5dp"
+        android:text="모임 해시태그"
+        android:textSize="25sp" />
+
+
+
+</RelativeLayout>
